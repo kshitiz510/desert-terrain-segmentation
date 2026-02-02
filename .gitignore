@@ -1,19 +1,103 @@
-# Python
-__pycache__/
-*.pyc
+# Results folders (predictions - too large for git)
+# Use leading slash to only match root-level folders
+/results/
+/outputs/
 
-# Virtual env
-venv/
+# Dataset (too large - users should download separately)
+/data/
+/dataset/
 
-# Data (do NOT upload)
-data/
-
-# Model weights
+# Model weights (typically large files)
+models/*.pth
 *.pth
 
-# Outputs
-results/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# OS / Editor
-.DS_Store
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
 .vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# PyTorch (uncomment if needed)
+# *.pt
+# *.pth.tar
+
+# Logs and checkpoints
+logs/
+checkpoints/
+runs/
+wandb/
+*.log
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.swp
+*.swo
+*~
+.tmp/
+tmp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling
+*.prof
